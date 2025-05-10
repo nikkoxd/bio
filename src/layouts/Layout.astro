@@ -15,7 +15,7 @@ const { frontmatter } = Astro.props;
     <title>bio - {frontmatter.title}</title>
 	</head>
   <body class="bg-[url(/background.jpg)] bg-cover h-screen flex justify-center items-center">
-    <div class="p-4 min-h-1/2 min-w-1/2 bg-background/80 backdrop-blur-xs text-on-background border-1 border-outline shadow-shadow/50 shadow-xl rounded-lg">
+    <div class="p-4 min-h-7/8 md:min-h-1/2 min-w-7/8 md:min-w-1/2 bg-background/80 backdrop-blur-xs text-on-background border-1 border-outline shadow-shadow/50 shadow-xl rounded-lg">
       <Header />
       <CommandLine title={frontmatter.title} />
       <slot />
