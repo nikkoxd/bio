@@ -1,0 +1,16 @@
+---
+import "../styles/global.css";
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<div class="flex justify-between mb-2">
+  <div class="flex gap-2 text-tertiary">
+    <span class="px-2 bg-background text-primary">&gt;</span> cat {title}.md
+  </div>
+  <div class="px-2 bg-background text-outline/50">
+    dir: <span class="text-primary">~/pages</span>
+  </div>
+</div>

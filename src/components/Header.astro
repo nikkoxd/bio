@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import NavLink from "./NavLink.astro";
+---
+
+<div class="flex flex-col md:flex-row gap-2 justify-between mb-2">
+  <div class="px-2 bg-background text-outline/50"><span class="text-primary">bio</span>@nikkoxd.ru</div>
+  <div class="flex gap-2">
+    <NavLink href="/">1: about</NavLink>
+    <NavLink href="/stack">2: stack</NavLink>
+    <NavLink href="/projects">3: projects</NavLink>
+  </div>
+  <div class="px-2 bg-background text-outline/50">status: <span class="text-primary">idle</span></div>
+</div>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+  a::before {
+    content: "";
+  }
+  a::after {
+    content: "";
+  }
+</style>

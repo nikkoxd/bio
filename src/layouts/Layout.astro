@@ -1,3 +1,10 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import CommandLine from "../components/CommandLine.astro";
+const { frontmatter } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +12,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+    <title>bio - {frontmatter.title}</title>
 	</head>
-	<body>
-		<slot />
+  <body class="bg-[url(/background.jpg)] bg-cover h-screen flex justify-center items-center">
+    <div class="p-4 min-h-1/2 min-w-1/2 bg-background/80 backdrop-blur-xs text-on-background border-1 border-outline shadow-shadow/50 shadow-xl rounded-lg">
+      <Header />
+      <CommandLine title={frontmatter.title} />
+      <slot />
+    </div>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
