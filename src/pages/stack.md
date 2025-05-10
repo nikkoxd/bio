@@ -6,8 +6,8 @@ title: 'stack'
 # My stack 🖥️
 
 ## Languages & stuff
-- *Languages:* C++, C#, TypeScript
-- *Libraries:* Node.js, React
+- Languages: C++, C#, Kotlin, TypeScript, SQL
+- Libraries: Node.js, Discord.js, Express, React, Jetpack Compose
 
 ## Software
-- *IDE:* Neovim, Android Studio
+- IDE: Neovim, Android Studio

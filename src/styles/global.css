@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./Iosevka.css";
 
 @theme {
   --color-primary: rgb(255 177 197);
@@ -87,6 +88,9 @@
     content: "## ";
   }
 
+  ul {
+    margin-bottom: 1.5rem;
+  }
   li::before {
     content: "- ";
   }
